@@ -2,13 +2,14 @@
   "name": "playrush-random-game-automation",
   "version": "1.0.0",
   "private": true,
-  "description": "Playwright automation that opens and plays a random PlayRush game.",
+  "description": "Playwright automation for PlayRush game testing.",
   "type": "module",
   "scripts": {
     "start": "node play-random-game.js",
     "start:visible": "HEADLESS=false node play-random-game.js",
     "test:cycle": "HEADLESS=true GAME_COUNT=1 node play-random-game.js",
-    "install-browser": "playwright install chromium"
+    "install-browser": "playwright install chromium",
+    "vercel-build": "playwright install chromium"
   },
   "dependencies": {
     "playwright": "^1.55.0"
